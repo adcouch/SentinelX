@@ -14,12 +14,12 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     Exit
 }
 
+# Prompt for Credentials
+$Cred = Get-Credential -Message "Enter administrator credentials for SentinelX setup"
+
 # Install Boxstarter
 Write-Host "Downloading and Installing Boxstarter..." -ForegroundColor Cyan
 . { Invoke-WebRequest -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force
-
-# Prompt for Credentials
-$Cred = Get-Credential -Message "Enter administrator credentials for SentinelX setup"
 
 # Validate URL before proceeding
 $BoxstarterURL = "https://raw.githubusercontent.com/adcouch/SentinelX/main/windply/sentinelx_deploy.choco"
