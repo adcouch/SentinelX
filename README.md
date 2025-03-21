@@ -2,7 +2,7 @@
 
 This is SentinelX a post deployment script for creating a penetration testing attack vm, specifically designed for Windows Server 2016 and above.
 
-to deploy:
+To deploy copy and past the below into an Administrative PowerShell ISE or PowerShell terminal:
 
 ```powershell
 # Ensure PowerShell Execution Policy allows running scripts
