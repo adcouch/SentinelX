@@ -1,6 +1,6 @@
 # SentinelX
 
-This is SentinelX a penetration testing attack vm, specifically designed for Windows Server 2016 and above.
+This is SentinelX a post deployment script for creating a penetration testing attack vm, specifically designed for Windows Server 2016 and above.
 
 to deploy:
 
